@@ -36,6 +36,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="play_clk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJh-6C-d0t"/>
                                     <segue destination="7WZ-p6-fxf" kind="show" id="HjN-aK-Mxj"/>
                                 </connections>
                             </button>
@@ -486,8 +487,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DoW-og-WGa"/>
-        <segue reference="Kba-pL-nIb"/>
+        <segue reference="HjN-aK-Mxj"/>
+        <segue reference="8UA-yO-Cti"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backpack" width="80" height="80"/>
