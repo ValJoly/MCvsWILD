@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var play_btn: UIButton!
     @IBAction func play_clk(_ sender: UIButton) {
-        Event(pathEvent: "event42.txt")
+        _ = Event(pathEvent: "eventScenario")
     }
     
     override func viewDidLoad() {

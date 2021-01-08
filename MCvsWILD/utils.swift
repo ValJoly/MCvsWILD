@@ -9,7 +9,7 @@ import Foundation
 
 public extension String {
     func contentsOrBlank()->String {
-        if let path = Bundle.main.path(forResource:self , ofType: nil) {
+        if let path = Bundle.main.path(forResource:self , ofType: "txt") {
             do {
                 let text = try String(contentsOfFile:path, encoding: String.Encoding.utf8)
                 return text

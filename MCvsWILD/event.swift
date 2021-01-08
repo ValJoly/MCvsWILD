@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Event {
     var path:  String = ""
@@ -33,7 +34,24 @@ class Event {
     
     
     init(pathEvent: String) {
-        let event:Array<String> = pathEvent.contentsOrBlank().split(separator: "\n", omittingEmptySubsequences: true).map(String.init)
-        print(event)
+        var text = ""
+        if let data = NSDataAsset(name: pathEvent)?.data {
+            text = String(data: data, encoding: .utf8)!
+            print(text)
+        }
+        let line = text.split(separator: "\n")
+        print(line)
+        
+    }
+    
+    func newEvent() -> () {
+        let numEvent = Int.random(in: 0...63)
+        var text = ""
+        if let data = NSDataAsset(name: "event" + String(numEvent))?.data {
+            text = String(data: data, encoding: .utf8)!
+            print(text)
+        }
+        let line = text.split(separator: "\n")
+        print(line)
     }
 }
